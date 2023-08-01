@@ -12,7 +12,7 @@ midnight 讀取的格式。
 1. 複製本 repo
 
    ```bash
-   git clone <https://github.com/sponge> --depth=1
+   git clone https://github.com/cheetosysst/sponge --depth=1
    cd sponge
    ```
 

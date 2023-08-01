@@ -9,7 +9,7 @@ for use in the [midnight](https://github.com/cheetosysst/midnight) project.
 1. Cloning
 
    ```bash
-   git clone <https://github.com/sponge> --depth=1
+   git clone https://github.com/cheetosysst/sponge --depth=1
    cd sponge
    ```
 
