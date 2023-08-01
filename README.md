@@ -1,37 +1,50 @@
 # Sponge
 
-Sponge is a simple PDF data extraction tool, built specifically for parsing data
-from [中華民國交通部公路總局-筆試題庫](https://www.thb.gov.tw/cl.aspx?n=12), and
-for use in the [midnight](https://github.com/cheetosysst/midnight) project.
+[English](./README_EN.md)
 
-## Installation
+Sponge 是一款為了駕照筆試練習網站
+[midnight](https://github.com/cheetosysst/midnight) 所撰寫的小工具。Sponge
+能夠將自[中華民國交通部公路總局-筆試題庫](https://www.thb.gov.tw/cl.aspx?n=12)下載的檔案整理成能供
+midnight 讀取的格式。
 
-1. Cloning
+## 安裝
+
+1. 複製本 repo
 
    ```bash
    git clone <https://github.com/sponge> --depth=1
    cd sponge
    ```
 
-2. Activate
+2. 啟動 venv
 
-   Please activate the virtual env enviroment by running scripts compatible with
-   you're system.
+   請根據您所使用的作業系統環境，執行對應的 activate
+   腳本，相關的說明可以在網路上搜尋到。
 
 3. Execute
-   - `-s`: Specifies selection quesiton file, for example: `-s file.pdf`
-   - `-t`: Specifies true false quesiton file, for example: `-t file.pdf`
+   - `-s`: 指定選擇題的檔案，例如： `-s file.pdf`
+   - `-t`: 指定是非題的檔案，例如： `-t file.pdf`
 
-   You can add multiple files of the same type, however that is just an
-   overengineered feature and is not useful for our usecase lol.
+   你可以指定多個同類型檔案
 
-   Full command example:
+   完整範例：
 
    ```bash
    python index.py -s tf.pdf -s sl.pdf >> out.json
    ```
 
-   Change the output file's name to the corresponding language, then copy it
-   back the midnight repo, and then format it's content in vscode.
+   更改輸出檔案的名子為對應的語言，複製該檔案到 midnight 中，並且使用 vscode
+   內建排版功能整理檔案內容。
 
-   **WARNING**: This tool currently only supports "zh-TW"
+## TODO
+
+- 支援更多語言
+- 支援圖片
+
+最後一點可能會有點不好處理，我希望可以讓這個工具完全自動化，但是我可能仍需要手動整理圖片，甚至自行製作
+svg 圖片。
+
+## 貢獻
+
+歡迎貢獻直接建立新的 PR 或是 issue，如果您沒有在一週內獲得回應，歡迎透過 E-Mail
+聯絡，我會盡快回應。
